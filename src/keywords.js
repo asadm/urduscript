@@ -78,7 +78,7 @@ export syntax likho = function (ctx) {
 }
 
 // function
-export syntax tareeka = function (ctx) {
+export syntax kaam = function (ctx) {
 	let fname = ctx.next().value
 	let fparam = ctx.next().value
 	let fblock = ctx.next().value;

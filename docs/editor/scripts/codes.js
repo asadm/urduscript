@@ -40,8 +40,8 @@ warna {
 `,
 
 // function
-"Function": `// function is 'tareeka'
-tareeka salaam(naam){
+"Function": `// function is 'kaam'
+kaam salaam(naam){
 	agar (naam){
     likho("Salam, " + naam)
   }

@@ -6,7 +6,7 @@ import {
   agar,
   jabtak,
 	likho,
-	tareeka,
+	kaam,
 	har
 } from './src/keywords'
 
@@ -26,7 +26,7 @@ har sabNaam k naam per{
 
 //salaam(naam)
 /*
-tareeka salaam(naam){
+kaam salaam(naam){
 	agar (naam === "ahmed"){
 		likho("oye ahmed")
 	}
