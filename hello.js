@@ -18,6 +18,7 @@ har (a=0; a<3; a++){
 }
 
 */
+/*
 samjho sabNaam = ["asad","ahmed"]
 har sabNaam k naam per{
 	likho(naam)
@@ -36,15 +37,22 @@ tareeka salaam(naam){
 		likho("mein kisi " + naam + " ko nai janta!")
 	}
 }
+*/
 
-/*
+samjho naam = "asad"
+
 agar (naam){
 	likho("salaam " + naam)
 }
-warna {
+warnaagar(naam===0) {
 	likho("Naam khali hai")
 }
-*/
+warna{
+	likho("kch")
+}
+
+likho ("end")
+likho ("asad2")
 
 /*
 samjho a = 10

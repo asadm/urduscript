@@ -12,26 +12,44 @@ export syntax galat = function (ctx) {
 
 // if
 export syntax agar = function (ctx) {
+	
     let ifparam = ctx.next().value
     let ifblock = ctx.next().value;
-    let warnas = ctx.next();
+	let warnas = ctx.next();
+	let ctxCounter = 3;
     let result = #`if ${ifparam} ${ifblock}`;
     while(!warnas.done){
-			if (warnas.value.value.token.value === "warna"){
-				let elseblock = ctx.next().value;
-				result = result.concat(#`else ${elseblock}`)
+		var isWarna = false;
+		
+
+		if (warnas.value.value.token.value === "warna"){
+			let elseblock = ctx.next().value;
+			result = result.concat(#`else ${elseblock}`)
+			//isWarna = true;
+			return result;
+		}
+
+		if (warnas.value.value.token.value === "warnaagar"){
+			let elseifparam = ctx.next().value;
+			let elseifblock = ctx.next().value;
+			ctxCounter += 2
+			result = result.concat(#`else if ${elseifparam} ${elseifblock}`)
+			isWarna = true;
+			
+		}
+
+		if (!isWarna) {
+			// we fetched something beyond this code block. reset context and fwd correctly.
+			ctx.reset()
+			while (--ctxCounter){
+				ctx.next()
 			}
+			
+			return result;
+		}
 
-			if (warnas.value.value.token.value === "warnaagar"){
-				let elseifparam = ctx.next().value;
-				let elseifblock = ctx.next().value;
-
-				result = result.concat(#`else if ${elseifparam} ${elseifblock}`)
-				
-				
-			}
-
-			warnas = ctx.next();
+		warnas = ctx.next();
+		ctxCounter++;
     }
     //console.log("warnas",warnas.value.token.value)
     

@@ -19,7 +19,7 @@ likho(naam)
 "ForEach": `// variable
 samjho list = ["Ahmed", "Ali", "Qasim"]
 
-// loop (foreach)
+// foreach loop. Iterate over 'list' array
 har list k naam per{
   // output to screen
   likho(naam)
