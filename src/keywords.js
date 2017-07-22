@@ -14,13 +14,29 @@ export syntax galat = function (ctx) {
 export syntax agar = function (ctx) {
     let ifparam = ctx.next().value
     let ifblock = ctx.next().value;
-    let warnas = ctx.next().value;
-    let elseblock = ctx.next().value;
-    
-    if (warnas.value.token.value === "warna"){
-        return #`if ${ifparam} ${ifblock} else ${elseblock}`;
+    let warnas = ctx.next();
+    let result = #`if ${ifparam} ${ifblock}`;
+    while(!warnas.done){
+			if (warnas.value.value.token.value === "warna"){
+				let elseblock = ctx.next().value;
+				result = result.concat(#`else ${elseblock}`)
+			}
+
+			if (warnas.value.value.token.value === "warnaagar"){
+				let elseifparam = ctx.next().value;
+				let elseifblock = ctx.next().value;
+
+				result = result.concat(#`else if ${elseifparam} ${elseifblock}`)
+				
+				
+			}
+
+			warnas = ctx.next();
     }
-    return #`if ${ifparam} ${ifblock}`;
+    //console.log("warnas",warnas.value.token.value)
+    
+    return result
+    //return #`if ${ifparam} ${ifblock}`;
 }
 
 
@@ -37,8 +53,17 @@ export syntax jabtak = function (ctx) {
 }
 
 // console.log
-export syntax bolo = function (ctx) {
+export syntax likho = function (ctx) {
     let params = ctx.next().value
     //let wblock = ctx.next().value;
     return #`console.log ${params}`;
+}
+
+// function
+export syntax tareeka = function (ctx) {
+	let fname = ctx.next().value
+	let fparam = ctx.next().value
+	let fblock = ctx.next().value;
+
+  return #`function ${fname} ${fparam} ${fblock}`;
 }

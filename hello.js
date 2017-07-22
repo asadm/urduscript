@@ -1,35 +1,49 @@
 // URDU.js headers
 import {
-	sach,
-	galat, 
-	samjho, 
-	agar,
-	jabtak,
-	bolo
+  sach,
+  galat, 
+  samjho, 
+  agar,
+  jabtak,
+	likho,
+	tareeka
 } from './src/keywords'
 
-/*import {
-	bolo
-} from './src/primitives'*/
 /////////////////////////////////
 
-samjho naam = "ahmed"
+samjho naam = "asad"
+salaam(naam)
 
+tareeka salaam(naam){
+	agar (naam === "ahmed"){
+		likho("oye ahmed")
+	}
+	warnaagar (naam === "asad"){
+		likho("oye asad")
+	}
+	warna {
+		likho("naam to likhen?")
+	}
+}
+
+/*
 agar (naam){
-	bolo("salaam " + naam)
+	likho("salaam " + naam)
 }
 warna {
-	bolo("kon ho bhai?")
+	likho("Naam khali hai")
 }
+*/
 
-
+/*
 samjho a = 10
-jabtak(a>0){
-	agar (a%2){
-		bolo("even", a)
+jabtak( a>0 ){
+	agar ( a%2 ){
+		likho("even", a)
 	}
 	warna{
-		bolo("odd", a)
+		likho("odd", a)
 	}
 	a--
 }
+*/
