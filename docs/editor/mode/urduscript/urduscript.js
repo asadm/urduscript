@@ -44,7 +44,7 @@ CodeMirror.defineMode("javascript", function(config, parserConfig) {
       "await": C,
       //urduscript additions:
       "agar": kw("if"), "jabtak": A, "warna": B,
-      "samjho": kw("var"), "likho": A,
+      "rakho": kw("var"), "likho": A,
       "sach": atom, "galat": atom,
       "kaam": kw("function"), "har": kw("for"), "k": A, "per": A, "pe": A
     };

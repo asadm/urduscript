@@ -9,7 +9,7 @@ likho("Salam, Dunya")
 `,
 // var
 "Variable": `// declare variable
-samjho naam = "Asad"
+rakho naam = "Asad"
 
 // output to screen
 likho(naam)
@@ -17,7 +17,7 @@ likho(naam)
 
 // foreach
 "ForEach": `// variable
-samjho list = ["Ahmed", "Ali", "Qasim"]
+rakho list = ["Ahmed", "Ali", "Qasim"]
 
 // foreach loop. Iterate over 'list' array
 har list k naam per{
@@ -28,7 +28,7 @@ har list k naam per{
 
 // if-else
 "If-Else": `// declare variable
-samjho naam = "Asad"
+rakho naam = "Asad"
 
 // if else
 agar (naam){
@@ -55,7 +55,7 @@ salaam("Asad")
 `,
 
 "While": `// declare a variable
-samjho a = 10
+rakho a = 10
 
 // while is 'jabtak'
 jabtak( a>0 ){

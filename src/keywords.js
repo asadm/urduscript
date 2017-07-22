@@ -59,7 +59,7 @@ export syntax agar = function (ctx) {
 
 
 // var
-export syntax samjho = function (ctx) {
+export syntax rakho = function (ctx) {
     return #`var`;
 }
 

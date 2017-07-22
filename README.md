@@ -8,7 +8,7 @@ UrduScript transpiles to JavaScript. All JavaScript frameworks (like jQuery, Und
 
 ```js
 // declare variable
-samjho naam = "Asad"
+rakho naam = "Asad"
 
 // output to console
 likho("Hello, " + naam)
@@ -18,6 +18,6 @@ likho("Hello, " + naam)
 
 ### Contributing
 
-This is a open project and I am open to all ideas and improvements. I will update a contributing guide and mentions soon. For now you can create a new issue.
+This is a open project and I am open to all ideas and improvements. I will update a contributing guide soon. For now you can create a new issue.
 
 Special thanks to **Ali Alavi**.
