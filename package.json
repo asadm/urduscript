@@ -7,12 +7,14 @@
   },
   "scripts": {
     "example": "bin/urdujs.js hello.js",
+    "start": "cp src/keywords.js editor/scripts/urdujs/keywords.js.txt && node_modules/nws/bin/nws -d editor",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Asad Memon",
   "license": "ISC",
   "dependencies": {
     "@sweet-js/core": "^3.0.13",
+    "nws": "^1.1.1",
     "yargs": "^8.0.2"
   }
 }

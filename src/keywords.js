@@ -67,3 +67,27 @@ export syntax tareeka = function (ctx) {
 
   return #`function ${fname} ${fparam} ${fblock}`;
 }
+
+// for and foreach loop
+export syntax har = function (ctx) {
+	let fparam = ctx.next().value
+	
+	if (fparam.type==="RawSyntax"){
+		//foreach
+		let fparamk = ctx.next().value;
+		let fparamvar = ctx.next().value;
+		let fblock = ctx.next().value;
+
+		//ignore 'per' or 'pe' if present
+		if (fblock.type==="RawSyntax" 
+				&& (fblock.value.token.value==="per" || fblock.value.token.value==="pe")
+			){
+				fblock = ctx.next().value;
+		}
+		return #`for (var ${fparamvar} of ${fparam}) ${fblock}`;
+	}
+	else{
+		let fblock = ctx.next().value;
+		return #`for ${fparam} ${fblock}`;
+	}
+}

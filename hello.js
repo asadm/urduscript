@@ -6,14 +6,25 @@ import {
   agar,
   jabtak,
 	likho,
-	tareeka
+	tareeka,
+	har
 } from './src/keywords'
 
 /////////////////////////////////
-
+/*
 samjho naam = "asad"
-salaam(naam)
+har (a=0; a<3; a++){
+	salaam(naam)
+}
 
+*/
+samjho sabNaam = ["asad","ahmed"]
+har sabNaam k naam per{
+	likho(naam)
+}
+
+//salaam(naam)
+/*
 tareeka salaam(naam){
 	agar (naam === "ahmed"){
 		likho("oye ahmed")
@@ -22,7 +33,7 @@ tareeka salaam(naam){
 		likho("oye asad")
 	}
 	warna {
-		likho("naam to likhen?")
+		likho("mein kisi " + naam + " ko nai janta!")
 	}
 }
 

@@ -20,3 +20,5 @@ node_modules
 
 
 .DS_Store
+
+editor/scripts/urdujs
