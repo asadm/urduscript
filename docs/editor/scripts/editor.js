@@ -21,9 +21,9 @@ jQuery.get('scripts/urdujs/keywords.js.txt', function(data) {
 
 var isMac = (typeof navigator !== 'undefined' && navigator.userAgent.indexOf('Mac OS X') != -1)
 if (isMac)
-    $("#btn-run").attr("value", "Run (⌘ + Enter)")
+    $("#btn-run").text("Run (⌘ + Enter)")
 else
-    $("#btn-run").attr("value", "Run (Ctrl + Enter)")
+    $("#btn-run").text("Run (Ctrl + Enter)")
 
 require(["./sweet", "./syntax"], function(sweet, syn) {
     var storage_code = 'editor_code';
