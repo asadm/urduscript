@@ -29,7 +29,7 @@ require(["./sweet", "./syntax"], function(sweet, syn) {
     var storage_code = 'editor_code';
     var storage_mode = 'editor_mode';
 
-    var starting_code = $("#editor").text();
+    var starting_code = CODES["Hello"]
     var compileWithSourcemap = $("body").attr("data-sourcemap") === "true";
     CodeMirror.commands.compileCode = function(cm) {
         updateExpand();
@@ -39,7 +39,8 @@ require(["./sweet", "./syntax"], function(sweet, syn) {
         //smartIndent: true,
         matchBrackets: true,
         indentWithTabs: true,
-        tabSize: 4,
+        tabSize: 2,
+        indentUnit:2,
         autofocus: true,
         theme: 'base16-light',
         extraKeys: {
@@ -93,9 +94,6 @@ require(["./sweet", "./syntax"], function(sweet, syn) {
     for (var i in CODES){
         $("#drop-examples").append($(`<option value=${i}>${i}</option>`))
     }
-    
-    // set value to first code
-    editor.setValue(CODES[$("#drop-examples").val()])
 
 
     $("#drop-examples").change((e)=>{
