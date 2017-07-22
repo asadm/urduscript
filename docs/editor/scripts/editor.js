@@ -89,6 +89,19 @@ require(["./sweet", "./syntax"], function(sweet, syn) {
         output.setValue(unparsedString); 
     });
 
+    //populate dropdown with examples
+    for (var i in CODES){
+        $("#drop-examples").append($(`<option value=${i}>${i}</option>`))
+    }
+    
+    // set value to first code
+    editor.setValue(CODES[$("#drop-examples").val()])
+
+
+    $("#drop-examples").change((e)=>{
+        editor.setValue( CODES[$(e.target).val()] )
+    })
+
     /*
     var updateTimeout;
     editor.on("change", function(e) {
@@ -108,6 +121,7 @@ require(["./sweet", "./syntax"], function(sweet, syn) {
     })
 
     // override console.log ie. likho
+    window.console.LOG = window.console.log;
     window.console.log = function(){
         var args = Array.prototype.slice.call(arguments);
         var str = args.join(" ")

@@ -82,6 +82,39 @@ body {
 }
 
 
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  #edit-box{
+    right: 0;
+    bottom: 30%;
+    border-bottom: 1px solid #000;
+    border-right: 0px;
+  }
+
+  #output-box{
+    top: 70%;
+    bottom: 40px;
+    left: 0;
+  }
+
+  #header{
+    right: 0;
+    padding-left: 0;
+  }
+  #header span{
+    display: none;
+  }
+  #controls{
+    display: none;
+  }
+
+  #drop-examples{
+    margin-right: 10px;
+    margin-top: 8px;
+    float: right;
+  }
+}
+
 .btn {
     display: inline-block;
     padding: 6px 12px;
@@ -113,7 +146,7 @@ body.invert .btn-success {
 }
 
 #btn-run,
-#btn-reset{
+#lbl-examples{
   margin-left: 10px;
 }
 
@@ -125,4 +158,15 @@ body.invert .btn-success {
 
 #chk-transpile{
   margin-top: 15px;
+}
+
+#lbl-examples{
+  font-weight: bold;
+  font-size: 13px; 
+  margin-right: 10px;
+}
+
+#drop-examples{
+  font-size: 14px;
+  min-width: 150px;
 }

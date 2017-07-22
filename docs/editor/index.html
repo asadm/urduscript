@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <title>Play UrduScript</title>
 
-  <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" href="css/codemirror.css">
   <link rel="stylesheet" href="css/base16-light.css">
@@ -13,6 +13,7 @@
   <script src="scripts/codemirror.js"></script>
   <script src="addon/edit/matchbrackets.js"></script>
   <script src="mode/urduscript/urduscript.js"></script>
+  <script src="scripts/codes.js"></script>
   <script data-main="scripts/editor" src="scripts/require.js"></script>
 
 </head>
@@ -21,12 +22,16 @@
 <div id='header'>
    <span>UrduScript</span>
    <input id="btn-run" type="button" class="btn btn-success" value="Run"/>
-
-   <input id="btn-reset" type="button" class="btn btn-default" value="Reset Code"/>
+   <span id="lbl-examples">Examples: </span>
+   <select id="drop-examples">
+    
+  </select>
+   
    
 </div>
 
 <div id="controls">
+  <!--input id="btn-reset" type="button" class="btn btn-default" value="Reset Code"/-->
   <input id="chk-transpile" type="checkbox" value="transpile" /> Only output transpiled code.
   
   <!-- <input id="ck-builtin" type="checkbox" value="builtin" /> include builtin macros -->
@@ -48,6 +53,13 @@ har list k naam per{
   // output to screen
   likho(naam)
 }
+
+// function ko 'tareeka' kehte hen
+tareeka salam(naam){
+  likho("Salam, " + naam)
+}
+
+salam("Qasim")
 
 </textarea>
 </div>
