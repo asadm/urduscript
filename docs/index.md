@@ -118,6 +118,24 @@ jabtak( a>0 ){
 }
 ```
 
+### If-Elseif-Else
+
+```js
+// declare variable
+rakho naam = "Asad"
+
+// if elseif else
+agar (naam === "Asad"){
+  likho("Salam, " + naam)
+}
+warnaagar (naam === "John"){
+  likho("Hello, " + naam)
+}
+warna {
+  likho("Naam khali hai")
+}
+```
+
 
 
 ## [Source Code](https://github.com/asadm/urduscript)
