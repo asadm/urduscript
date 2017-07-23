@@ -138,9 +138,9 @@ warna {
 
 
 
-## Contribute to Grammar
+## Contribute
 
-If you have suggestion for a keyword (Like "true" should be "sach"). Please [record it here](https://goo.gl/forms/2yU3xylEoKAQZrbG2). I will add your name to the contributors if I use your suggestion. Thanks!
+You can contribute even if you think you are not a programmer. Please read [this guide](contribute).
 
 ## [Source Code](https://github.com/asadm/urduscript)
 

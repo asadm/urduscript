@@ -18,7 +18,7 @@ likho("Hello, " + naam)
 
 ### Contributing
 
-This is a open project and I am open to all ideas and improvements. I will update a contributing guide soon. For now you can create a new issue.
+This is a open project and I am open to all ideas and improvements. See [this page](https://asadmemon.com/urduscript/contribute).
 
 
 
