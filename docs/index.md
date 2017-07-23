@@ -56,6 +56,70 @@ As much as I wanted to. Here are few reasons:
 - Right-to-left code style is horrible.
 - Newer generation is adapting Urdish rapidly. 
 
+
+
+## Other Examples
+
+### For Each
+
+```js
+// variable
+rakho list = ["Ahmed", "Ali", "Qasim"]
+
+// foreach loop. Iterate over 'list' array
+har list k naam per{
+  // output to screen
+  likho(naam)
+}
+```
+
+### If-Else
+
+```js
+// declare variable
+rakho naam = "Asad"
+
+// if else
+agar (naam){
+  likho("Salam, " + naam)
+}
+warna {
+  likho("Naam khali hai")
+}
+```
+
+### Function
+
+```js
+// function is 'kaam'
+kaam salaam(naam){
+	agar (naam){
+    likho("Salam, " + naam)
+  }
+  warna {
+    likho("Naam khali hai")
+  }
+}
+
+// calling function
+salaam("Ali")
+```
+
+### While
+
+```js
+// declare a variable
+rakho a = 10
+
+// while is 'jabtak'
+jabtak( a>0 ){
+	likho(a)
+	a--
+}
+```
+
+
+
 ## [Source Code](https://github.com/asadm/urduscript)
 
 I have released the [code](https://github.com/asadm/urduscript) under MIT License. ⭐ the repo while you are there :P
