@@ -136,6 +136,19 @@ warna {
 }
 ```
 
+### Recursion (Fibonacci)
+```js
+// recursive function
+kaam fibonacci(num) {
+	// base case
+  agar (num <= 1) bhejo 1;
+	
+	// recursion
+  bhejo fibonacci(num - 1) + fibonacci(num - 2);
+}
+
+likho(fibonacci(5))
+```
 
 
 ## Contribute

@@ -109,3 +109,9 @@ export syntax har = function (ctx) {
 		return #`for ${fparam} ${fblock}`;
 	}
 }
+
+// return
+export syntax bhejo = function (ctx) {
+	let param = ctx.next().value;
+    return #`return ${param}`;
+}

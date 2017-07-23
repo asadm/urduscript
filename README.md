@@ -26,4 +26,4 @@ This is a open project and I am open to all ideas and improvements. See [this pa
 
 - Project is only possible due to [Sweet.js](https://github.com/sweet-js/sweet-core).
 - The online editor uses the wonderful [CodeMirror](https://github.com/codemirror/CodeMirror).
-- Special thanks to Ali Alavi, Osman Mian for their help.
+- Special thanks to Ali Alavi, Osman Mian, Eric Bhatti for their help.

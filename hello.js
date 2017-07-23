@@ -2,12 +2,13 @@
 import {
   sach,
   galat, 
-  samjho, 
+  rakho, 
   agar,
   jabtak,
 	likho,
 	kaam,
-	har
+	har,
+	bhejo
 } from './src/keywords'
 
 /////////////////////////////////
@@ -23,22 +24,23 @@ samjho sabNaam = ["asad","ahmed"]
 har sabNaam k naam per{
 	likho(naam)
 }
+*/
+likho(salaam("asad"))
 
-//salaam(naam)
-/*
 kaam salaam(naam){
 	agar (naam === "ahmed"){
-		likho("oye ahmed")
+		wapas "oye ahmed"
 	}
 	warnaagar (naam === "asad"){
-		likho("oye asad")
+		wapas "oye asad"
 	}
 	warna {
-		likho("mein kisi " + naam + " ko nai janta!")
+		wapas "mein kisi " + naam + " ko nai janta!"
 	}
 }
-*/
 
+
+/*
 samjho naam = "asad"
 
 agar (naam){

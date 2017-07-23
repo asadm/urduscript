@@ -17,7 +17,7 @@ likho(naam)
 
 // foreach
 "ForEach": `// variable
-rakho list = ["Ahmed", "Ali", "Qasim"]
+rakho list = ["Ahmed", "Sara", "Qasim"]
 
 // foreach loop. Iterate over 'list' array
 har list k naam per{
@@ -62,6 +62,18 @@ jabtak( a>0 ){
 	likho(a)
 	a--
 }
+`,
+
+"Recursion(Fibonacci)": `// recursive function
+kaam fibonacci(num) {
+	// base case
+  agar (num <= 1) bhejo 1;
+	
+	// recursion
+  bhejo fibonacci(num - 1) + fibonacci(num - 2);
+}
+
+likho(fibonacci(5))
 `
 
 }

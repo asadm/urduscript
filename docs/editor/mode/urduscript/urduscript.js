@@ -46,7 +46,8 @@ CodeMirror.defineMode("javascript", function(config, parserConfig) {
       "agar": kw("if"), "jabtak": A, "warna": B,
       "rakho": kw("var"), "likho": A,
       "sach": atom, "galat": atom,
-      "kaam": kw("function"), "har": kw("for"), "k": A, "per": A, "pe": A
+      "kaam": kw("function"), "har": kw("for"), "k": A, "per": A, "pe": A,
+      "bhejo": C
     };
 
     // Extend the 'normal' keywords with the TypeScript language extensions
