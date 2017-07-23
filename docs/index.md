@@ -56,3 +56,8 @@ As much as I wanted to. Here are few reasons:
 - Right-to-left code style is horrible.
 - Newer generation is adapting Urdish rapidly. 
 
+## [Source Code](https://github.com/asadm/urduscript)
+
+I have released the [code](https://github.com/asadm/urduscript) under MIT License. 
+
+The transpiler is written in JavaScript using [Sweet.js](https://github.com/sweet-js/sweet-core).
