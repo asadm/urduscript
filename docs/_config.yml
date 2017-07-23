@@ -1,3 +1,14 @@
 theme: jekyll-theme-minimal
 title: UrduScript
 description: JavaScript ka Urdish dialect.
+
+gems:
+  - jekyll-seo-tag
+
+logo: 'head.png'
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: 'head.png'
