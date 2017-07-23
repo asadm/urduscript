@@ -138,6 +138,10 @@ warna {
 
 
 
+## Contribute to Grammar
+
+If you have suggestion for a keyword (Like "true" should be "sach"). Please [record it here](https://goo.gl/forms/2yU3xylEoKAQZrbG2). I will add your name to the contributors if I use your suggestion. Thanks!
+
 ## [Source Code](https://github.com/asadm/urduscript)
 
 I have released the [code](https://github.com/asadm/urduscript) under MIT License. ⭐ the repo while you are there :P
