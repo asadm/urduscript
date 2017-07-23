@@ -20,4 +20,10 @@ likho("Hello, " + naam)
 
 This is a open project and I am open to all ideas and improvements. I will update a contributing guide soon. For now you can create a new issue.
 
-Special thanks to **Ali Alavi**.
+
+
+### Acknowledgments
+
+- Project is only possible due to [Sweet.js](https://github.com/sweet-js/sweet-core).
+- The online editor uses the wonderful [CodeMirror](https://github.com/codemirror/CodeMirror).
+- Special thanks to Ali Alavi, Osman Mian for their help.

@@ -9,7 +9,7 @@ likho("Salam, Dunya")
 `,
 // var
 "Variable": `// declare variable
-rakho naam = "Asad"
+rakho naam = "Ali"
 
 // output to screen
 likho(naam)
