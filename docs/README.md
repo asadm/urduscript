@@ -57,6 +57,14 @@ As much as I wanted to. Here are few reasons:
 - Newer generation is adapting Urdish rapidly. 
 
 
+To prove my point, here is a RTL pseudo-code hello world:
+
+<img src="rtl1.png" width="400">
+
+See what I mean? The font is bad. RTL is hard to understand. Also typing this was less natural than Urdish:
+
+<img src="ltr1.png" width="400">
+
 
 ## Other Examples
 
