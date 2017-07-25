@@ -8,7 +8,9 @@ import {
 	likho,
 	kaam,
 	har,
-	bhejo
+	bhejo,
+	khali,
+	pucho
 } from './src/keywords'
 
 /////////////////////////////////

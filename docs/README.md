@@ -178,6 +178,28 @@ likho(fibonacci(5))
 
 You can contribute even if you think you are not a programmer. Please read [this guide](contribute).
 
+Here are some contributors of the language:
+
+- Ali Alavi
+- Eric Bhatti
+- Azka Qaiser
+- Junaid Sarfraz
+- Mehmood Memon
+- Pavan Kumar
+- Muhammad Asif
+- Ahmed Jawed
+- Harris Irfan
+- Zayn-ul-abdin
+- Mubashar Iqbal
+- M Shaharyar Siddiqui
+- Areeba
+- Ahmer
+- Muhammad Zaid Ikhlas
+- Mian Asad
+- Junaid Nadeem
+- Shahan
+- Muhammad Noman
+
 ## [Source Code](https://github.com/asadm/urduscript)
 
 I have released the [code](https://github.com/asadm/urduscript) under MIT License. ⭐ the repo while you are there :P

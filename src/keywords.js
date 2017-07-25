@@ -1,5 +1,13 @@
 'lang sweet.js';
 
+// null
+export syntax khali = function (ctx) {
+    return #`null`;
+}
+export syntax khaali = function (ctx) {
+    return #`null`;
+}
+
 // true
 export syntax sahi = function (ctx) {
     return #`true`;
