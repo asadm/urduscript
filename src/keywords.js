@@ -17,6 +17,9 @@ export syntax sahi = function (ctx) {
 export syntax galat = function (ctx) {
     return #`false`;
 }
+export syntax ghalat = function (ctx) {
+    return #`false`;
+}
 
 // if
 export syntax agar = function (ctx) {
