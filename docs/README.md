@@ -96,6 +96,21 @@ warna {
 }
 ```
 
+### Prompt
+
+```js
+//prompt: ask for input from user
+rakho naam = pucho("Apna naam likhen")
+
+// if else
+agar (naam){
+  likho("Salam, " + naam)
+}
+warna {
+  likho("Naam khali hai")
+}
+```
+
 ### Function
 
 ```js

@@ -77,6 +77,14 @@ export syntax likho = function (ctx) {
     return #`console.log ${params}`;
 }
 
+// prompt (only works on browser right now)
+export syntax pucho = function (ctx) {
+    let params = ctx.next().value
+    //let wblock = ctx.next().value;
+    return #`prompt ${params}`;
+}
+
+
 // function
 export syntax kaam = function (ctx) {
 	let fname = ctx.next().value

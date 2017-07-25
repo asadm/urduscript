@@ -39,6 +39,19 @@ warna {
 }
 `,
 
+// prompt
+"Prompt/GetLine": `//prompt: ask for input from user
+rakho naam = pucho("Apna naam likhen")
+
+// if else
+agar (naam){
+  likho("Salam, " + naam)
+}
+warna {
+  likho("Naam khali hai")
+}
+`,
+
 // function
 "Function": `// function is 'kaam'
 kaam salaam(naam){
