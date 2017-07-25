@@ -6,24 +6,6 @@ UrduScript is an [Urdish](http://www.urbandictionary.com/define.php?term=Urdish)
 
 UrduScript transpiles to JavaScript. All JavaScript frameworks (like jQuery, UnderScore, React, etc) can be seemlessly used.
 
-### Installation and running
-##### Prerequisites:
-In order to run UrduScript on your computer, you need to install [Node.js](https://nodejs.org/en/download/) first. 
-##### Installing:
-- Download zip or clone the repository
-- Inside your project directory, run:
-```js
-npm install
-```
-##### Running:
-If the npm install was success full, run:
-```js
-npm start
-```
-Open your browser and type
-```js
-http://localhost:3030
-```
 ### Hello World
 
 ```js
@@ -35,6 +17,24 @@ likho("Hello, " + naam)
 ```
 
 [**Try it online here**](https://asadmemon.com/urduscript/editor/).
+
+### Installation (Web Editor)
+If you want to run the web editor offline. Follow these steps:
+
+##### Prerequisites:
+In order to run UrduScript on your computer, you need to install [Node.js](https://nodejs.org/en/download/) first. 
+##### Installing:
+- Download zip or clone the repository
+- Inside your project directory, run:
+```js
+npm install
+npm start
+```
+
+Open your browser and type
+```js
+http://localhost:3030
+```
 
 ### Contributing
 
