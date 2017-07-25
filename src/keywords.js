@@ -10,6 +10,13 @@ export syntax galat = function (ctx) {
     return #`false`;
 }
 
+
+// isNaN
+export syntax kya_galat = function (ctx) {
+    let params = ctx.next().value
+    return #`isNaN ${params}`;
+}
+
 // if
 export syntax agar = function (ctx) {
 	
