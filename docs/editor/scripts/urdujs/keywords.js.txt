@@ -1,7 +1,7 @@
 'lang sweet.js';
 
 // true
-export syntax sach = function (ctx) {
+export syntax sahi = function (ctx) {
     return #`true`;
 }
 
