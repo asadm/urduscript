@@ -134,3 +134,22 @@ export syntax bhejo = function (ctx) {
 	let param = ctx.next().value;
     return #`return ${param}`;
 }
+
+//do while
+export syntax karo = function(ctx) {
+	let dblock = ctx.next().value;
+	let jabtak = ctx.next();
+	if(jabtak.value != null){
+		if(jabtak.value.value.token.value === "jabtak"){
+		console.log(jabtak.value.value.token.value);
+		let jabtakparams = ctx.next().value;
+		return #`do ${dblock} while ${jabtakparams}`;
+		} else {
+			return #`console.log("galti: karo ke liye jabtak hona lazmi hai!")`;
+		}
+	} else {
+		return #`console.log("galti: karo ke liye jabtak hona lazmi hai!")`;
+	}
+	
+	
+}
