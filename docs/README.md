@@ -141,6 +141,18 @@ jabtak( a>0 ){
 }
 ```
 
+### Do-While
+
+```js
+// ask age until given
+karo{
+  age = pucho("Apni age likhen")
+}
+jabtak(!age)
+likho("Apki age " + age + " hai")
+```
+
+
 ### If-Elseif-Else
 
 ```js
@@ -199,6 +211,7 @@ Here are some contributors of the language:
 - Junaid Nadeem
 - Shahan
 - Muhammad Noman
+- Ahsan Sohail
 
 ## [Source Code](https://github.com/asadm/urduscript)
 

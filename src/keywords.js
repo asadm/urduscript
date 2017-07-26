@@ -141,7 +141,7 @@ export syntax karo = function(ctx) {
 	let jabtak = ctx.next();
 	if(jabtak.value != null){
 		if(jabtak.value.value.token.value === "jabtak"){
-		console.log(jabtak.value.value.token.value);
+		//console.log(jabtak.value.value.token.value);
 		let jabtakparams = ctx.next().value;
 		return #`do ${dblock} while ${jabtakparams}`;
 		} else {

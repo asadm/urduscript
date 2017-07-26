@@ -43,7 +43,7 @@ CodeMirror.defineMode("javascript", function(config, parserConfig) {
       "yield": C, "export": kw("export"), "import": kw("import"), "extends": C,
       "await": C,
       //urduscript additions:
-      "agar": kw("if"), "jabtak": A, "warna": B, "warnaagar": B,
+      "agar": kw("if"), "karo": B, "jabtak": A, "warna": B, "warnaagar": B,
       "rakho": kw("var"), "likho": A, "pucho": A,
       "sahi": atom, "galat": atom, "ghalat": atom, "khali": atom, "khaali": atom,
       "kaam": kw("function"), "har": kw("for"), "k": A, "per": A, "pe": A,
