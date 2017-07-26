@@ -1,8 +1,8 @@
 // URDU.js headers
 import {
   sach,
-  galat, 
-  rakho, 
+  galat,
+  rakho,
   agar,
   jabtak,
 	likho,
@@ -11,7 +11,8 @@ import {
 	bhejo,
 	khali,
 	pucho,
-	karo
+	karo,
+  niklo
 } from './src/keywords'
 
 /////////////////////////////////

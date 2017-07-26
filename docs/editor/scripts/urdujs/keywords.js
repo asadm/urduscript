@@ -10,6 +10,12 @@ export syntax galat = function (ctx) {
     return #`false`;
 }
 
+//break
+export syntax niklo = function(ctx)
+{
+    return #`break`;
+}
+
 // if
 export syntax agar = function (ctx) {
     let ifparam = ctx.next().value
@@ -27,14 +33,14 @@ export syntax agar = function (ctx) {
 				let elseifblock = ctx.next().value;
 
 				result = result.concat(#`else if ${elseifparam} ${elseifblock}`)
-				
-				
+
+
 			}
 
 			warnas = ctx.next();
     }
     //console.log("warnas",warnas.value.token.value)
-    
+
     return result
     //return #`if ${ifparam} ${ifblock}`;
 }
@@ -71,14 +77,14 @@ export syntax tareeka = function (ctx) {
 // for and foreach loop
 export syntax har = function (ctx) {
 	let fparam = ctx.next().value
-	
+
 	if (fparam.type==="RawSyntax"){
 		//foreach
 		let fparamk = ctx.next().value;
 		let fparamvar = ctx.next().value;
 		let fblock = ctx.next().value;
 		//ignore 'per' or 'pe' if present
-		if (fblock.type==="RawSyntax" 
+		if (fblock.type==="RawSyntax"
 				&& fblock.value.token.value==="per"
 				&& fblock.value.token.value==="pe"
 			){
