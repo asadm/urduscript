@@ -1,5 +1,13 @@
 'lang sweet.js';
 
+// null
+export syntax khali = function (ctx) {
+    return #`null`;
+}
+export syntax khaali = function (ctx) {
+    return #`null`;
+}
+
 // true
 export syntax sahi = function (ctx) {
     return #`true`;
@@ -7,6 +15,9 @@ export syntax sahi = function (ctx) {
 
 // false
 export syntax galat = function (ctx) {
+    return #`false`;
+}
+export syntax ghalat = function (ctx) {
     return #`false`;
 }
 
@@ -129,4 +140,23 @@ export syntax har = function (ctx) {
 export syntax bhejo = function (ctx) {
 	let param = ctx.next().value;
     return #`return ${param}`;
+}
+
+//do while
+export syntax karo = function(ctx) {
+	let dblock = ctx.next().value;
+	let jabtak = ctx.next();
+	if(jabtak.value != null){
+		if(jabtak.value.value.token.value === "jabtak"){
+		//console.log(jabtak.value.value.token.value);
+		let jabtakparams = ctx.next().value;
+		return #`do ${dblock} while ${jabtakparams}`;
+		} else {
+			return #`console.log("galti: karo ke liye jabtak hona lazmi hai!")`;
+		}
+	} else {
+		return #`console.log("galti: karo ke liye jabtak hona lazmi hai!")`;
+	}
+	
+	
 }

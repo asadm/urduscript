@@ -23,15 +23,34 @@ If you want to run the web editor offline. Follow these steps:
 
 ##### Prerequisites:
 In order to run UrduScript on your computer, you need to install [Node.js](https://nodejs.org/en/download/) first. 
-##### Installing:
+##### Installing (Windows):
+
+- Download zip or clone the repository
+
+- Inside your project directory, run:
+
+  ```sh
+  npm install
+  npm install -g nws
+  npm run windows
+  ```
+
+- Open your browser and type
+
+```js
+http://localhost:3030
+```
+##### Installing (MacOs, Ubuntu, Unix, etc):
+
 - Download zip or clone the repository
 - Inside your project directory, run:
-```js
+```sh
 npm install
 npm start
 ```
 
-Open your browser and type
+- Open your browser and type
+
 ```js
 http://localhost:3030
 ```

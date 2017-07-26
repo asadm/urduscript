@@ -8,7 +8,10 @@ import {
 	likho,
 	kaam,
 	har,
-	bhejo
+	bhejo,
+	khali,
+	pucho,
+	karo
 } from './src/keywords'
 
 /////////////////////////////////
@@ -26,6 +29,7 @@ har sabNaam k naam per{
 }
 */
 likho(salaam("asad"))
+hello()
 
 kaam salaam(naam){
 	agar (naam === "ahmed"){
@@ -39,6 +43,9 @@ kaam salaam(naam){
 	}
 }
 
+kamm hello(){
+	likho("hello")
+}
 
 /*
 samjho naam = "asad"

@@ -76,7 +76,13 @@ jabtak( a>0 ){
 	a--
 }
 `,
-
+"Do-While":`// ask age until given
+karo{
+  age = pucho("Apni age likhen")
+}
+jabtak(!age)
+likho("Apki age " + age + " hai")
+`,
 "Recursion(Fibonacci)": `// recursive function
 kaam fibonacci(num) {
 	// base case
