@@ -8,7 +8,7 @@
   "scripts": {
     "example": "bin/urdujs.js hello.js",
     "start": "cp src/keywords.js docs/editor/scripts/urdujs/keywords.js.txt && node_modules/nws/bin/nws -d docs/editor",
-    "windows": "nws -d docs/editor",
+    "windows": "copy src\\keywords.js docs\\editor\\scripts\\urdujs\\keywords.js.txt && nws -d docs/editor",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Asad Memon",
