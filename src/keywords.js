@@ -150,6 +150,31 @@ export syntax karo = function(ctx) {
 	} else {
 		return #`console.log("galti: karo ke liye jabtak hona lazmi hai!")`;
 	}
-	
-	
+}
+
+//try catch finally
+export syntax koshish = function(ctx){
+	let tryblock = ctx.next().value;
+	let pakro = ctx.next();
+	if(pakro.value!=null){
+		if(pakro.value.value.token.value === "pakro"){
+			let catchparams =ctx.next().value;
+			let catchblock = ctx.next().value;
+			let akhir = ctx.next();
+			if(akhir.value!=null){
+				if(akhir.value.value.token.value === "akhir"){
+					let finallyblock = ctx.next().value;
+					return #`try ${tryblock} catch ${catchparams} ${catchblock} finally ${finallyblock}`;
+				} else {
+					return #`console.log("galti: akhir sahi tarah nahin likha")`;
+				}
+			} else {
+				return #`try ${tryblock} catch ${catchparams} ${catchblock}`;
+			
+			}
+		}
+	} else {
+		return #`console.log("galti: koshish ke liye pakro hona lazmi hai!")`;
+	}
+
 }

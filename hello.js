@@ -11,7 +11,8 @@ import {
 	bhejo,
 	khali,
 	pucho,
-	karo
+	karo,
+	koshish
 } from './src/keywords'
 
 /////////////////////////////////
