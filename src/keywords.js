@@ -11,6 +11,13 @@ export syntax sahi = ctx => #`true`
 export syntax galat = ctx => #`false`
 export syntax ghalat = ctx => #`false`
 
+
+// isNaN
+export syntax kya_galat = function (ctx) {
+    let params = ctx.next().value
+    return #`isNaN ${params}`;
+}
+
 // if
 export syntax agar = function (ctx) {
 	
