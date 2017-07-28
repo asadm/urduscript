@@ -20,7 +20,7 @@ export syntax agar = function (ctx) {
     let ctxCounter = 3;
     let result = #`if ${ifparam} ${ifblock}`;
     while(!warnas.done){
-			var isWarna = false;
+		var isWarna = false;
 			
 
 			if (warnas.value.value.token.value === "warna"){
@@ -75,19 +75,13 @@ export syntax likho = ctx => #`console.log ${ctx.next().value}`
 export syntax _testAlert = ctx => #`alert ${ctx.next().value}`
 
 // prompt (only works on browser right now)
-export syntax pucho = function (ctx) {
-    let params = ctx.next().value
-    //let wblock = ctx.next().value;
-    return #`prompt ${params}`;
-}
-
+export syntax pucho = ctx => #`prompt ${ctx.next().value}`
 
 // function
 export syntax kaam = function (ctx) {
 	let fname = ctx.next().value
 	let fparam = ctx.next().value
 	let fblock = ctx.next().value;
-
   return #`function ${fname} ${fparam} ${fblock}`;
 }
 
