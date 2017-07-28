@@ -1,66 +1,56 @@
 'lang sweet.js';
 
 // null
-export syntax khali = function (ctx) {
-    return #`null`;
-}
-export syntax khaali = function (ctx) {
-    return #`null`;
-}
+export syntax khali = ctx => #`null`
+export syntax khaali = ctx => #`null`
 
 // true
-export syntax sahi = function (ctx) {
-    return #`true`;
-}
+export syntax sahi = ctx => #`true`
 
 // false
-export syntax galat = function (ctx) {
-    return #`false`;
-}
-export syntax ghalat = function (ctx) {
-    return #`false`;
-}
+export syntax galat = ctx => #`false`
+export syntax ghalat = ctx => #`false`
 
 // if
 export syntax agar = function (ctx) {
 	
     let ifparam = ctx.next().value
     let ifblock = ctx.next().value;
-	let warnas = ctx.next();
-	let ctxCounter = 3;
+    let warnas = ctx.next();
+    let ctxCounter = 3;
     let result = #`if ${ifparam} ${ifblock}`;
     while(!warnas.done){
-		var isWarna = false;
-		
-
-		if (warnas.value.value.token.value === "warna"){
-			let elseblock = ctx.next().value;
-			result = result.concat(#`else ${elseblock}`)
-			//isWarna = true;
-			return result;
-		}
-
-		if (warnas.value.value.token.value === "warnaagar"){
-			let elseifparam = ctx.next().value;
-			let elseifblock = ctx.next().value;
-			ctxCounter += 2
-			result = result.concat(#`else if ${elseifparam} ${elseifblock}`)
-			isWarna = true;
+			var isWarna = false;
 			
-		}
 
-		if (!isWarna) {
-			// we fetched something beyond this code block. reset context and fwd correctly.
-			ctx.reset()
-			while (--ctxCounter){
-				ctx.next()
+			if (warnas.value.value.token.value === "warna"){
+				let elseblock = ctx.next().value;
+				result = result.concat(#`else ${elseblock}`)
+				//isWarna = true;
+				return result;
 			}
-			
-			return result;
-		}
 
-		warnas = ctx.next();
-		ctxCounter++;
+			if (warnas.value.value.token.value === "warnaagar"){
+				let elseifparam = ctx.next().value;
+				let elseifblock = ctx.next().value;
+				ctxCounter += 2
+				result = result.concat(#`else if ${elseifparam} ${elseifblock}`)
+				isWarna = true;
+				
+			}
+
+			if (!isWarna) {
+				// we fetched something beyond this code block. reset context and fwd correctly.
+				ctx.reset()
+				while (--ctxCounter){
+					ctx.next()
+				}
+				
+				return result;
+			}
+
+			warnas = ctx.next();
+			ctxCounter++;
     }
     //console.log("warnas",warnas.value.token.value)
     
@@ -68,11 +58,8 @@ export syntax agar = function (ctx) {
     //return #`if ${ifparam} ${ifblock}`;
 }
 
-
 // var
-export syntax rakho = function (ctx) {
-    return #`var`;
-}
+export syntax rakho = ctx => #`var`
 
 // while
 export syntax jabtak = function (ctx) {
@@ -82,11 +69,10 @@ export syntax jabtak = function (ctx) {
 }
 
 // console.log
-export syntax likho = function (ctx) {
-    let params = ctx.next().value
-    //let wblock = ctx.next().value;
-    return #`console.log ${params}`;
-}
+export syntax likho = ctx => #`console.log ${ctx.next().value}`
+
+// alert
+export syntax _testAlert = ctx => #`alert ${ctx.next().value}`
 
 // prompt (only works on browser right now)
 export syntax pucho = function (ctx) {
@@ -130,10 +116,7 @@ export syntax har = function (ctx) {
 }
 
 // return
-export syntax bhejo = function (ctx) {
-	let param = ctx.next().value;
-    return #`return ${param}`;
-}
+export syntax bhejo = ctx => #`return ${ctx.next().value}`;
 
 //do while
 export syntax karo = function(ctx) {
