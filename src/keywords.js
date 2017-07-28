@@ -127,8 +127,7 @@ export syntax karo = function(ctx) {
 	} else {
 		return #`console.log("galti: karo ke liye jabtak hona lazmi hai!")`;
 	}
-	
-	
+
 }
 
 // break

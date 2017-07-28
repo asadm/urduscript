@@ -212,6 +212,8 @@ Here are some contributors of the language:
 - Shahan
 - Muhammad Noman
 - Ahsan Sohail
+- Majid Razvi
+- Hammad Siddiqui
 
 ## [Source Code](https://github.com/asadm/urduscript)
 
