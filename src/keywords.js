@@ -130,3 +130,6 @@ export syntax karo = function(ctx) {
 	
 	
 }
+
+// break
+export syntax rukjao = (ctx) => #`break`;
