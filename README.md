@@ -57,7 +57,7 @@ http://localhost:3030
 
 ### Contributing
 
-This is a open project and I am open to all ideas and improvements. See [this page](https://asadmemon.com/urduscript/contribute).
+This is an open project and I am open to all ideas and improvements. See [this page](https://asadmemon.com/urduscript/contribute).
 
 
 
