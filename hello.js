@@ -43,7 +43,7 @@ kaam salaam(naam){
 	}
 }
 
-kamm hello(){
+kaam hello(){
 	likho("hello")
 }
 
