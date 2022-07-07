@@ -13,7 +13,7 @@ export syntax ghalat = ctx => #`false`
 
 // if
 export syntax agar = function (ctx) {
-	
+
     let ifparam = ctx.next().value
     let ifblock = ctx.next().value;
     let warnas = ctx.next();
@@ -21,7 +21,7 @@ export syntax agar = function (ctx) {
     let result = #`if ${ifparam} ${ifblock}`;
     while(!warnas.done){
 		var isWarna = false;
-			
+
 
 			if (warnas.value.value.token.value === "warna"){
 				let elseblock = ctx.next().value;
@@ -36,7 +36,7 @@ export syntax agar = function (ctx) {
 				ctxCounter += 2
 				result = result.concat(#`else if ${elseifparam} ${elseifblock}`)
 				isWarna = true;
-				
+
 			}
 
 			if (!isWarna) {
@@ -45,7 +45,7 @@ export syntax agar = function (ctx) {
 				while (--ctxCounter){
 					ctx.next()
 				}
-				
+
 				return result;
 			}
 
@@ -53,7 +53,7 @@ export syntax agar = function (ctx) {
 			ctxCounter++;
     }
     //console.log("warnas",warnas.value.token.value)
-    
+
     return result
     //return #`if ${ifparam} ${ifblock}`;
 }
@@ -88,7 +88,7 @@ export syntax kaam = function (ctx) {
 // for and foreach loop
 export syntax har = function (ctx) {
 	let fparam = ctx.next().value
-	
+
 	if (fparam.type==="RawSyntax"){
 		//foreach
 		let fparamk = ctx.next().value;
@@ -96,7 +96,7 @@ export syntax har = function (ctx) {
 		let fblock = ctx.next().value;
 
 		//ignore 'per' or 'pe' if present
-		if (fblock.type==="RawSyntax" 
+		if (fblock.type==="RawSyntax"
 				&& (fblock.value.token.value==="per" || fblock.value.token.value==="pe")
 			){
 				fblock = ctx.next().value;
@@ -132,3 +132,19 @@ export syntax karo = function(ctx) {
 
 // break
 export syntax rukjao = (ctx) => #`break`;
+
+//maps a number from one range to another
+//map(value, currentMinRange, currentMaxRange, targetMinRange, targetMaxRange)
+export syntax naqsh = function(ctx){
+  let bodyCtx = ctx.contextify(ctx.next().value);
+  let val = bodyCtx.next().value;
+  bodyCtx.next(); // eat ,
+  let currentMinRange = bodyCtx.next().value;
+  bodyCtx.next(); // eat ,
+  let currentMaxRange = bodyCtx.next().value;
+  bodyCtx.next(); // eat ,
+  let targetMinRange = bodyCtx.next().value;
+  bodyCtx.next(); // eat ,
+  let targetMaxRange = bodyCtx.next().value;
+  return #`((${val} - ${currentMinRange}) / (${currentMaxRange} - ${currentMinRange}))*(${targetMaxRange} - ${targetMinRange})+${targetMinRange}`;
+}
